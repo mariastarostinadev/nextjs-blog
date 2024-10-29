@@ -1,6 +1,6 @@
 import { createPost } from "@/actions/actions";
 
-export default function page() {
+export default async function page() {
   
   return (
     <main className="text-center py-16 ">
