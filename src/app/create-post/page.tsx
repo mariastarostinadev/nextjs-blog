@@ -1,4 +1,5 @@
 import { createPost } from "@/actions/actions";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 export default async function page() {
   
@@ -17,6 +18,10 @@ export default async function page() {
             />
         <button className="h-full bg-slate-600 px-5 rounded text-white">Submit</button>
       </form>
+
+      <LogoutLink>
+        Log out
+      </LogoutLink>
     </main>
   );
 }
