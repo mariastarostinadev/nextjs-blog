@@ -9,7 +9,7 @@ export async function createPost(formData: FormData){
     await prisma.post.create({ //-update database: adding, updateing, deleting(data mutations))
         data:{
             title,
-            body
+            body,
         },
     })
 }
